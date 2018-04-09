@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a17305r011.a17305r011_assignment5.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_marginVertical="20dp"
+                android:id="@+id/tvTrainFilePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""/>
+
+            <Button
+                android:layout_marginVertical="20dp"
+                android:id="@+id/btnPick"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick file For Training"/>
+
+            <EditText
+                android:layout_marginVertical="20dp"
+                android:id="@+id/etWindowSize"
+                android:hint="Wondow Size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btnTrainSVM"
+                android:layout_marginVertical="20dp"
+                android:text="Train SVM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginVertical="20dp"
+                android:id="@+id/tvTestFilePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/btnPredictSVM"
+                android:layout_marginVertical="20dp"
+                android:text="Predict "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
